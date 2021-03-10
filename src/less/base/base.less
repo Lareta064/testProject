@@ -70,10 +70,13 @@ button{
 	}
 	
 }
-.title-3{
+.title-3,.title-4, h3, h4{
 	font-size: 18px;
-	line-height: 22px;
+	line-height: 1.22;
 	color: @title;
+	
+}
+.title-3, h3{
 	font-family: "Montserrat Semibold";
 }
 /* BUTTON*/
@@ -90,5 +93,11 @@ button{
 	&:hover{
 		background-color: #fff;
 		color: @red;
+		border-color: @red;
 	}
+}
+button.btn:focus{
+	border-color: @red;
+	background-color: @red;
+	color: #fff;
 }
