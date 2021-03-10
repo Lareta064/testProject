@@ -76,65 +76,14 @@ header.header
 						li
 							a(href="contacts") Контакты
 
-	//- .header-mobile
-	//- 	.container
-	//- 		#mobile-menu.mobile-menu
-	//- 			.header-content
-	//- 				.img-block
-	//- 					img(src='img/icons/company.png' width="208" alt='img')
-	//- 				button.search#search-btn
-	//- 					+search
-	//- 					+close
-	//- 			//- .menu-toggle
-	//- 			//- 	span	
-	//- 			.mobile-menu__header
-	//- 				.contact-phone
-	//- 					a(href="tel:84956428800") +7 (495) 642 88 00
-	//- 				.header-top-item
-	//- 					button.item-lang ru
-	//- 						span
-	//- 							+ru
-	//- 			.header__icon-group
-	//- 				ul 
-	//- 					li
-	//- 						a(href="#")
-	//- 							+bookmark
-	//- 						span.active
-	//- 					li 	
-	//- 						a(href="#")
-	//- 							+star
-	//- 						span
-	//- 					li 
-	//- 						a(href="#")
-	//- 							+basket
-	//- 						span.active
-	//- 					li 
-	//- 						a(href="#")
-	//- 							+login
-	//- 						span
-
-	//- 			.mobile-menu__body
-	//- 				ul
-	//- 					li
-	//- 						a(href="about.html") О Твинсторе
-	//- 					li
-	//- 						a(href="tour.html") 3D тур
-	//- 					li
-	//- 						a(href="show-room") Шоу-румы
-	//- 					li
-	//- 						a(href="brends") Бренды
-	//- 					li
-	//- 						a(href="contacts") Контакты
-
 	#mobile-menu.mobile-menu
 		.mobile-menu__header
-			.header-content
-				.img-block
-					img(src='img/icons/company.png' width="208" alt='img')
-				form.search-form
-					.search-form__content
-						+search
-					+close
+			.container
+				.header-content
+					.img-block
+						img(src='img/icons/company.png' width="208" alt='img')
+				.menu-toggle
+					span
 		.header__icon-group
 			ul 
 				li
@@ -153,25 +102,36 @@ header.header
 					a(href="#")
 						+login
 					span
-		.mobile-menu__center
-			.contact-phone
-				a(href="tel:84956428800") +7 (495) 642 88 00
-			button.item-lang ru
-				span
-					+ru
+			#search-btn__mob
+				+search
+		.header-search#header-search__mob
+			.container
+				form.search-form
+					.search-form__content
+						.form-item.form-item__input
+							input(type="text")
+						.form-item
+							button.btn(type="submit") Найти	
+		#mobile-nav
+			.mobile-menu__center
+				.contact-phone
+					a(href="tel:84956428800") +7 (495) 642 88 00
+				button.item-lang ru
+					span
+						+ru
 
-		.mobile-menu__body
-			ul
-
+			.mobile-menu__body
 				ul
-					li
-						a(href="about.html") О Твинсторе
-					li
-						a(href="tour.html") 3D тур
-					li
-						a(href="show-room") Шоу-румы
-					li
-						a(href="brends") Бренды
-					li
-						a(href="contacts") Контакты
+
+					ul
+						li
+							a(href="about.html") О Твинсторе
+						li
+							a(href="tour.html") 3D тур
+						li
+							a(href="show-room") Шоу-румы
+						li
+							a(href="brends") Бренды
+						li
+							a(href="contacts") Контакты
 
