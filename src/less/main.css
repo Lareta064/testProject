@@ -1,3 +1,10 @@
+.tr {
+  transition: 0.5s;
+}
+.ma {
+  margin-left: auto;
+  margin-right: auto;
+}
 * {
   box-sizing: border-box;
 }
@@ -15,7 +22,6 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat Regular";
-  color: #A9A9A9;
 }
 input[type="radio"],
 input[type='checkbox'],
@@ -56,11 +62,11 @@ input {
 }
 button {
   cursor: pointer;
+  transition: 0.5s;
   transition: 0.3s;
   padding-top: 0;
   padding-bottom: 0;
   border: 0;
-  background-color: transparent;
 }
 .container {
   width: 1140px;
@@ -95,4 +101,16 @@ button {
     width: 1170px;
     max-width: 1170px;
   }
+}
+.header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+.header-top {
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
