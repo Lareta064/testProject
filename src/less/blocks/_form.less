@@ -1,0 +1,58 @@
+.form-item{
+	input{
+		height: 45px;
+		display: inline-block;
+		width: 100%;
+		background-color: #fff;
+		padding-left: 16px;
+		font-size: 16px;
+		color: @formText;
+		border: 1px solid transparent;
+		&:focus{
+			border-color: @red;
+		}
+	}
+}
+.form-agree label {
+	color: #a7a7a7;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	cursor:pointer;
+	@media(max-width:991px){
+		font-size: 10px;
+	}
+	
+}
+.form-agree input{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.custom-checkbox{
+	display: inline-block;
+	position: relative;
+	flex-shrink:0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #CDCDCD;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-right: 6px;
+}
+.custom-checkbox:after{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 4px;
+	transform: rotate(0deg) scale(0);
+	width: 6px;
+	height: 12px;
+	border-bottom: 1px solid @red;
+	border-right: 1px solid @red;
+	.tr;
+}
+.form-agree input[type="checkbox"]:checked+.custom-checkbox:after {
+	transform: rotate(45deg) scale(1);
+}

@@ -5,7 +5,6 @@ html, body{
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
 	font-size: 15px;
 	line-height: normal;
 	background-color: #fff;
@@ -40,6 +39,7 @@ button,button:focus,
 input{
 	outline: none;
 	font-family: inherit;
+	border: none;
 }
 button{
 	cursor:pointer;
@@ -50,7 +50,11 @@ button{
 	background-color:transparent;
 }
 .container{
+<<<<<<< HEAD
   width: 1140px;
+=======
+  width:1140px;
+>>>>>>> 6091cc4cd649ed74274c1140ef9528a8e566803c
   margin: 0 auto;
 	@media(max-width:1199px){
 		width: 960px;
@@ -63,13 +67,39 @@ button{
 	}
 	@media(max-width:579px){
 		width: 100%;
-		padding-left: 0;
-	  	padding-right: 0;
+		padding-left: 15px;
+	  	padding-right: 15px;
 	}
-	@media(min-width: 1200px){
-		padding-left: 0;
-		padding-right: 0;
-		width: 1170px;
-		max-width:1170px;
+	
+}
+.title-3,.title-4, h3, h4{
+	font-size: 18px;
+	line-height: 1.22;
+	color: @title;
+	
+}
+.title-3, h3{
+	font-family: "Montserrat Semibold";
+}
+/* BUTTON*/
+.btn{
+	height: 45px;
+	padding-left: 39px;
+	padding-right: 39px;
+	border:2px solid @red;
+	background-color: @red;
+	color: #fff;
+	font-size: 16px;
+	line-height: 41px;
+	.tr;
+	&:hover{
+		background-color: #fff;
+		color: @red;
+		border-color: @red;
 	}
+}
+button.btn:focus{
+	border-color: @red;
+	background-color: @red;
+	color: #fff;
 }
