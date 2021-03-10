@@ -17,9 +17,11 @@
 }
 
 .accordeon-item-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
+	@media(max-width:767px){
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-out;
+	}
 }
 .show {
     background-color: #87c49d;
@@ -27,7 +29,121 @@
 }
 
 .loock {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .3s;
+	@media(max-width:767px){
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .3s;	
+	}
+    
+}
+.footer-nav__content{
+	display: flex;
+}
+.footer-column h4{
+	margin-bottom: 10px;
+}
+.footer ul li, .footer ul li a{
+	font-size: 13px;
+	line-height: 16px;
+	color: #8A8A8A;
+	font-family: "Montserrat Regular";
+}
+.footer .contacts-list{
+	li span{display: block;}
+	li span:first-child{
+		font-family: "Montserrat Medium";
+		margin-bottom: 10px;
+
+	}
+	
+}
+.footer li a, .footer li img{.tr;}
+.footer li:hover a{color: @red}
+.footer li:hover img{opacity: .5;}
+
+.footer .contacts-list ul li +li {
+	margin-top: 25px;
+}
+.footer-metainfo{
+	margin-top: 25px;
+}
+.footer-metainfo li span{
+	margin-bottom: 11px;
+}
+.footer-metainfo li span, .footer-metainfo li a{
+	display: block;
+}
+.footer-metainfo li +li{margin-top: 25px;}
+
+.currency-rates{
+	margin-top: 20px;
+	ul, li{
+		display: flex;
+		align-items: center;
+	}
+	li{
+		font-size: 13px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: #8A8A8A;
+		span:first-child{
+			color: @red;
+			font-family: serif;
+			font-family: "Montserrat Semibold";
+		}
+	}
+	li span{margin-bottom: 0;}
+	li +li{margin-left: 20px; margin-top: 0;}
+	li span +span{ margin-left: 10px;}
+
+}
+.footer-nav-list + .footer-nav-list {margin-top: 30px;}
+.footer-nav-list h4{margin-bottom: 5px;}
+.footer-nav-list li a{
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.footer-nav-flex{
+	display: flex;
+}
+.footer-nav-list .nav-list-type{
+	margin-top: 32px;
+}
+.footer-column:first-child{
+	margin-right: 24px;
+	max-width:208px;
+}
+.footer-column:nth-child(2){
+	margin-right:77px;
+}
+.nav-flex-block +.nav-flex-block {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.mixitBlock-content{display: none;}
+.mixitBlock-content.active{
+	display: block;
+	animation-name: opscity;
+	animation-fill-mode: forwards;
+	animation-duration: .8s;
+}
+@keyframes opscity{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.scheme-mixit{margin-top: 22px;}
+.scheme-block-toggle{margin-top: 21px;}
+.scheme-block-toggle button{
+	display: block;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: "Montserrat Medium";
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #616161;
 }
