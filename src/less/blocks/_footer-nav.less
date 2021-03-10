@@ -23,11 +23,6 @@
 		transition: max-height 0.3s ease-out;
 	}
 }
-.show {
-    background-color: #87c49d;
-    color: #fff;
-}
-
 .loock {
 	@media(max-width:767px){
 		max-height: 0;
@@ -38,6 +33,7 @@
 }
 .footer-nav__content{
 	display: flex;
+	
 }
 .footer-column h4{
 	margin-bottom: 10px;
@@ -73,10 +69,10 @@
 .footer-metainfo li span, .footer-metainfo li a{
 	display: block;
 }
-.footer-metainfo li +li{margin-top: 25px;}
+.footer-metainfo li +li{margin-top: 20px;}
 
 .currency-rates{
-	margin-top: 20px;
+	margin-top: 10px;
 	ul, li{
 		display: flex;
 		align-items: center;
@@ -97,7 +93,7 @@
 	li span +span{ margin-left: 10px;}
 
 }
-.footer-nav-list + .footer-nav-list {margin-top: 30px;}
+.footer-nav-list + .footer-nav-list {margin-top: 25px;}
 .footer-nav-list h4{margin-bottom: 5px;}
 .footer-nav-list li a{
 	display: block;
@@ -113,7 +109,7 @@
 }
 .footer-column:first-child{
 	margin-right: 24px;
-	max-width:208px;
+	min-width:208px;
 }
 .footer-column:nth-child(2){
 	margin-right:50px;
@@ -126,11 +122,11 @@
 .mixitBlock-content{display: none;}
 .mixitBlock-content.active{
 	display: block;
-	animation-name: opscity;
+	animation-name: opacity;
 	animation-fill-mode: forwards;
 	animation-duration: .8s;
 }
-@keyframes opscity{
+@keyframes opacity{
 	0%{
 		opacity: 0;
 	}
@@ -139,7 +135,7 @@
 	}
 }
 .scheme-mixit{margin-top: 22px;}
-.scheme-block-toggle{margin-top: 21px;}
+.scheme-block-toggle{margin-top: 15px;}
 .scheme-block-toggle button{
 	display: block;
 	font-size: 13px;
@@ -180,14 +176,14 @@
 	line-height: 16px;
 }
 .politic-doc{
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 8px;
 	display: inline-block;
 	&:hover{
 		color: @red;
 	}
 }
-.copyright-block .toggle-leng{margin-top: 8px;}
+.copyright-block .toggle-leng{margin-top: 5px;}
 .toggle-leng a{
 	display: flex;
 	align-items: center;
@@ -196,4 +192,39 @@
 	&:hover{
 		opacity: .6;
 	}
+}
+@media(min-width: 768px) and (max-width:1199px){
+	.footer-nav__content{
+		flex-wrap: wrap;
+	}
+	.footer-column:first-child{
+		width: 100%;
+	}
+	.footer .contacts-list ul{
+		display: flex;
+		justify-content: space-between;
+		li +li {margin-top: 0;}
+		li:first-child{
+			width: 30%;
+		}
+		li:nth-child(2), li:nth-child(3){
+			width: 30%;
+		}
+		li:last-child{display: none;}
+	}
+	.footer-metainfo ul{
+		display: flex;
+		li +li {
+			margin-top: 0;
+			margin-left: 50px;
+		}
+	}
+	.footer-metainfo{
+		display: flex;
+		.currency-rates{margin-top: 0;
+		margin-left: 50px;}
+	}
+}
+@media(max-width:767px){
+	.footer-nav__content{display: block;}
 }
