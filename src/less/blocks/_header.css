@@ -1,0 +1,25 @@
+.header {
+  position: sticky;
+  top: 0;
+}
+.header-top {
+  background-color: #fff;
+  padding-top: 18px;
+  padding-bottom: 21px;
+}
+.header-top__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top-item {
+  position: relative;
+  display: flex;
+}
+.header-top-item:before {
+  content: '';
+  width: 1px ;
+}
+.adress-item.adress-item--icon {
+  display: flex;
+}
