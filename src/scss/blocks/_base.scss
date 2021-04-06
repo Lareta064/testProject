@@ -1,0 +1,87 @@
+@font-face {
+	font-family: "hanson";
+	src: url("../fonts/hanson_hairline-webfont.woff2") format("woff2"),
+		   url("./fonts/hanson_hairline-webfont.woff") format("woff");
+   }
+* {
+	box-sizing: border-box;
+  }
+  
+  html {
+	scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 1.86;
+	-webkit-font-smoothing: antialiased;
+  }
+  
+  
+  .container {
+	max-width:1310px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	@media(max-width:1364px){
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	@media(max-width:991px){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+  }
+  
+  a,
+  a:hover {
+	// text-decoration: none;
+	
+	transition: .3s;
+  }
+  a:hover{opacity: .5;}
+  ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+	padding: 0;
+	margin: 0;
+  }
+   img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+  }
+  
+  input,
+  button {
+	outline: none;
+  }
+  
+  button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+  }
+ 
+  input[type="radio"], input[type='checkbox'], input[type="submit"]{
+	  appearance: none;
+	  -moz-appearance: none;
+  -webkit-appearance: none;
+  }

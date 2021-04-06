@@ -1,0 +1,16 @@
+#overlay
+#modal-block.modal-block
+	.modal-wrapper
+		button.close-modal
+			span +
+		form.contact-form#modal-form(autocomplete="off")
+			.form-item
+				input(type="text" name="name" placeholder=" name" required)
+			.form-item
+				input(type="text" name="country" placeholder="country" required)
+			.form-item
+				input(type="email" name="email" placeholder="email" required)
+			.form-btn
+				button(type="submit").button-color register
+		.success-massage
+			p Thank you, your request has been received!
