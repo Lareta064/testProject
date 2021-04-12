@@ -2,28 +2,46 @@ $(document).ready(function(){
 	//====== SHOW MODAL FORM ======
 	const overlay = document.getElementById('overlay');
 	const bodyEl = document.body;
-	const modalForm = document.getElementById('modal-block');
+	const modalForm = document.getElementsByClassName('modal-block');
 	const btnOpenModalForm = document.getElementsByClassName('btn-open-modal');
-	const btnCloseModalForm = document.querySelector('.close-modal');
+	const btnCloseModalForm = document.querySelectorAll('.close-modal');
 
 		for(let item of btnOpenModalForm){
 			item.addEventListener('click', function(){
 				overlay.classList.add('active');
-				modalForm.classList.add('active');
+				const thisData = item.getAttribute('data-target');
+				for(el of modalForm){
+					const elData = el.getAttribute('data-index');
+					if(elData == thisData){
+						el.classList.add('active');
+					}
+					
+				}
+				
 				bodyEl.classList.add('noscroll');
 			})
 		}
 
 	if(btnCloseModalForm){
-		btnCloseModalForm.addEventListener('click', function(){
-			console.log('555');
+		for(item of btnCloseModalForm){
+			item.addEventListener('click', function(){
+			
 			overlay.classList.remove('active');
-			modalForm.classList.remove('active');
+			for(let form of modalForm){
+				form.classList.remove('active');	
+			}
+			
 			bodyEl.classList.remove('noscroll');
 		});
+	}
 		overlay.addEventListener('click', function(){
 			this.classList.remove('active');
-			modalForm.classList.remove('active');
+			
+				for(let form of modalForm){
+					form.classList.remove('active');	
+				}
+			
+			// modalForm.classList.remove('active');
 			bodyEl.classList.remove('noscroll');
 		});
 	}

@@ -7,17 +7,20 @@ header.header
 		.header-content
 			.header-top 
 				nav 
-					a(href="#!").menu-item ABOUT 
-					a(href="#!").menu-item DONATE
+					a(href="#!" data-target="2").menu-item.btn-open-modal ABOUT 
+					a(href="#!" data-target="3").menu-item.btn-open-modal DONATE
 				.soccontacts 
-					a(href="#!").soccontacts-item
+					a(href="https://twitter.com/CryptoArtExpo" target="_blank" title="twitter").soccontacts-item
 						+ic1 
-					a(href="#!").soccontacts-item
-						+ic2 
+					//- a(href="#!").soccontacts-item
+					//- 	+ic2 
 			.logo 
-				img(src="img/logo.png", width="210" alt="logo")
-			h1 cryptoART online exhibition
-			h2 NFT UNIVERSE
+				img(src="img/logo1.png", width="520" alt="logo")
+			.center-title 
+				img(src="img/title.png", width="1920" alt="title")
 			.info-block 
-				p Opening day: #[span 12th of April]
-				a(href="#!").page-btn.btn-open-modal Pre Register Now
+				p 
+					span.big-text 12th 
+					span of April
+			.form-toggle
+				a(href="#!" data-target="1").page-btn.btn-open-modal Pre Register Now

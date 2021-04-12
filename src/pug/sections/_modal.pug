@@ -1,5 +1,17 @@
+mixin donateItem(imgSrc, name) 
+	.donate-type__item 
+		p.type-title
+			span 
+				img(src="img/"+ imgSrc +".png", width="50" alt="btc")
+			span.donate-name #{name}
+		p
+			a(href="#!" download)
+				figure
+					img(src="img/"+ imgSrc +".jpg", width="200" alt="qrBTC")
+					figcaption Click QR code to download
+
 #overlay
-#modal-block.modal-block
+#modal-block.modal-block(data-index="1")
 	.modal-wrapper
 		button.close-modal
 			span +
@@ -14,3 +26,51 @@
 				button(type="submit").button-color register
 		.success-massage
 			p Thank you, your request has been received!
+
+.modal-block(data-index="2")
+	.modal-wrapper
+		button.close-modal
+			span +
+		.scroll-content
+			p CryptoArtMuseum was founded by an international team of professionals from different spheres: crypto, art, design and business. Our aim is to show that NFT is not just a hype, that it is a new stage of art history which gives new opportunities to both artists and art lovers. 
+			p We are all passionate about innovations and want to make them useful for the development of our society.
+			p Our project is not just an online museum, we plan to support talented artists, educate collectors and make a contribution to the heritage of our generation. 
+			p The future is now, don’t stop the world's progress.
+			.person-block 
+				h4 Credits #[span (telegram)]:
+				ul 
+					li 
+						span Olga Filatova&nbsp;— 
+						span &nbsp;Founder, #[a(href="https://msng.link/o/?@olechkaf=tg")  @olechkaf]
+					li 
+						span Alina Gordienco&nbsp;—
+						span &nbsp;curator, adviser, #[a(href="https://msng.link/o/?@alina_sat8=tg") @alina_sat8]
+					li 
+						span Sergei Medvedev&nbsp;—
+						span &nbsp;adviser, #[a(href="https://msng.link/o/?@suprum=tg") @suprum]
+					li 
+						span Anastasia Drinevskaya&nbsp;—
+						span &nbsp;partners relations, #[a(href="https://msng.link/o/?@ana_dawson=tg") @ana_dawson]
+					li 
+						span Ilia Chasovnikov&nbsp;— 
+						span &nbsp;Art Director, #[a(href="https://msng.link/o/?@jhardman=tg") @jhardman]
+					li 
+						span Evgeniya Fonareva&nbsp;— 
+						span &nbsp;designer, #[a(href="https://msng.link/o/?@fishplate=tg") @fishplate]
+					li 
+						span Pavel Shikhaleev&nbsp;-
+						span &nbsp;operations manager, #[a(href="https://msng.link/o/?@PaulEv=tg") @PaulEv]
+
+.modal-block(data-index="3")
+	.modal-wrapper
+		button.close-modal
+			span +
+		.scroll-content
+			p CryproArtMuseum foundation is a non-commercial organisation to help NFT art to develop as a full-fledged sphere of art. 
+			p We plan to aggregate donations to support young artists, give them grants and organize residence with outstanding experts in digital art. 
+			p We make all spendings transparent and will give our contributors all info about our achievements and plans.
+			p If you are also passionate about NFT art, feel free to donate and subscribe to our newsletter to know all updates and success stories.
+			.donate-type 
+				+donateItem('btc', 'Bitcoin') 
+				+donateItem('eth', 'ethereum') 
+				+donateItem('usdt', 'tether')
