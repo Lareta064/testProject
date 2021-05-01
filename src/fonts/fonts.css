@@ -1,36 +1,41 @@
 @font-face {
-	font-family: 'Cuprum Regular';
-	src: url('Cuprum-Regular.eot');
-	src: url('Cuprum-Regular.eot?#iefix') format('embedded-opentype'),
-	url('Cuprum-Regular.woff') format('woff'),
-	url('Cuprum-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Montserrat Regular";
+  src: url("Montserrat-Regular.eot");
+  src: url("Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat-Regular.woff") format("woff"),
+    url("Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-	font-family: 'Cuprum Bold';
-	src: url('Cuprum-Bold.eot');
-	src: url('Cuprum-Bold.eot?#iefix') format('embedded-opentype'),
-	url('Cuprum-Bold.woff') format('woff'),
-	url('Cuprum-Bold.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-	}
-	@font-face {
-	font-family: 'Roboto Condensed Regular';
-	src: url('RobotoCondensed-Regular.eot');
-	src: url('RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
-	url('RobotoCondensed-Regular.woff') format('woff'),
-	url('RobotoCondensed-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-	}
+  font-family: "Montserrat Medium";
+  src: url("Montserrat-Medium.eot");
+  src: url("Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat-Medium.woff") format("woff"),
+    url("Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
-	font-family: 'Roboto Condensed Bold';
-	src: url('RobotoCondensed-Bold.eot');
-	src: url('RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
-	url('RobotoCondensed-Bold.woff') format('woff'),
-	url('RobotoCondensed-Bold.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-	}
+  font-family: "Montserrat Semibold";
+  src: url("Montserrat-SemiBold.eot");
+  src: url("Montserrat-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("Montserrat-SemiBold.woff") format("woff"),
+    url("Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("Montserrat-ExtraBold.eot");
+  src: url("Montserrat-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("Montserrat-ExtraBold.woff") format("woff"),
+    url("Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

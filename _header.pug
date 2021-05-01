@@ -1,0 +1,107 @@
+#overlay
+// ========== Шапка ==========
+header.header
+	.container.container--large
+		.header-content
+			.logo-block(itemscope itemtype="https://schema.org")
+				a(href="index.html" itemprop="logo")
+					//========== svg  логоип ==========
+					+logo
+					//========== конец svg  логоип ==========
+				p ПЦР в реальном времени
+			.header-column(itemscope itemtype="https://schema.org/Organization")
+				.d-none.d-xl-block.logo-title
+					h2 ПЦР в реальном времени
+				.contact-phone.d-none.d-md-flex
+					span
+						//========== svg телефон ==========
+						+call
+						//========== конец svg телефон ==========
+					a(href="tel:84954342266" itemprop="telephone") +7 (495) 434-22-66
+				button.callback-btn.d-none.d-md-block(data-toggle="modal" data-target="#contactForm") Обратная связь
+				button.square.square-lang.d-none.d-md-block Eng				
+				form#search-form.search-form
+					.search-input
+						input(type="text" placeholder="Поиск...")
+					.search-result#search-result
+						.search-result__count.text-13
+							.container
+								p Найдено 1-2 из 2
+							
+						.search-result__list
+							.container
+								ul
+									li.link
+										a(href="product-page.html")
+											span Индикатор-БИО
+									li.link
+										a(href="#!")
+											span Комплектация мобильной ПЦР-лаборатории «Индикатор-БИО»
+					button.square#search-button
+						//========== svg лупа ==========
+						+search(class="visible")
+						//========== конец svg лупа ==========
+						//========== svg крестик ==========
+						+close
+						//========== конец svg крестик ==========
+				.menu-toggle
+					span
+// ========== десктопное меню в шапке ==========
+.header-menu
+	.container
+		.header-menu__content
+			ul
+				li 
+					a(href="#!") Продукция
+					ul
+						li
+							a(href="product-page-1.html") Индикатор-БИО
+						li
+							a(href="product-page-2.html") Расходные материалы (ПЦР-чип)
+						li
+							a(href="product-page-3.html") Комплектация мобильной ПЦР-лаборатории “Индикатор-БИО”
+				li 
+					a(href="how-work.html") Принцип работы
+				li 
+					a(href="company.html") О компании
+				li 
+					a(href="faq.html") Вопрос-ответ
+				li 
+					a(href="documentation.html") Документация
+				li 
+					a(href="contacts.html") Контакты
+// ========== мобильное меню ==========
+#mobile-menu.mobile-menu
+	.mobile-menu__header
+		.contact-phone
+			span
+				//========== svg телефон ==========
+				+call
+				//========== конец svg телефон ==========
+			a(href="tel:84954342266" itemprop="telephone") +7 (495) 434-22-66
+		button.square.square-lang Eng
+	.mobile-menu__body
+		ul
+			li 
+				a(href="index.html") Главная
+			li 
+				a(href="#!") Продукция
+				ul
+					li
+						a(href="product-page-1.html") Индикатор-БИО
+					li
+						a(href="product-page-2.html") Расходные материалы (ПЦР-чип)
+					li
+						a(href="product-page-3.html") Комплектация мобильной#[br] ПЦР-лаборатории#[br]“Индикатор-БИО”
+			li 
+				a(href="how-work.html") Принцип работы
+			li 
+				a(href="company.html") О компании
+			li 
+				a(href="faq.html") Вопрос-ответ
+			li 
+				a(href="documentation.html") Документация
+			li 
+				a(href="contacts.html") Контакты
+		.mobile-menu__footer
+			button.button.button-blue(data-toggle="modal" data-target="#contactForm") Обратная связь 
