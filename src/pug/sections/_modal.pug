@@ -1,7 +1,7 @@
-mixin donateItem(imgSrc, name) 
-	.donate-type__item 
+mixin donateItem(imgSrc, name)
+	.donate-type__item
 		p.type-title
-			span 
+			span
 				img(src="img/"+ imgSrc +".png", width="50" alt="btc")
 			span.donate-name #{name}
 		p
@@ -11,53 +11,72 @@ mixin donateItem(imgSrc, name)
 					figcaption Click QR code to download
 
 #overlay
-#modal-block.modal-block(data-index="1")
+#modal-block.modal-block(data-index="4")
 	.modal-wrapper
 		button.close-modal
 			span +
-		form.contact-form#modal-form(autocomplete="off")
-			.form-item
-				input(type="text" name="name" placeholder=" name" required)
-			.form-item
-				input(type="text" name="country" placeholder="country" required)
-			.form-item
-				input(type="email" name="email" placeholder="email" required)
-			.form-btn
-				button(type="submit").button-color register
-		.success-massage
-			p Thank you, your request has been received!
+		.scroll-content
+			.title-group
+				h3.text-center Welcome to Crypto Art Museum!
+				p Thank you for your registration.
+			.modal-info-text
+				p How to use the platform to get the best from our exhibition:
+				p #[span.red-star *]Push the button #[strong ENTER EXHIBITION] below
+				p #[span.red-star *]Please, turn your device sound on as we have an audio guide for the specific artworks.
+				p #[span.red-star *]Don't press #[strong START GUIDED TOUR BUTTON], if you want to listen to our audioguide
+				p #[span.red-star *]Start with the text on the left wall
+				p #[span.red-star *]Click #[strong Next ] after the audio is finished
+				p #[span.red-star *]Click #[strong INFO] tab to get more information about artworks
+			.modal-info-btn
+				p.page-btn.btn-open-modal Exhibition is over
+
+//- #modal-block.modal-block(data-index="1")
+//- 	.modal-wrapper
+//- 		button.close-modal
+//- 			span +
+//- 		form.contact-form#modal-form(autocomplete="off")
+//- 			.form-item
+//- 				input(type="text" name="name" placeholder=" name" required)
+//- 			.form-item
+//- 				input(type="text" name="country" placeholder="country" required)
+//- 			.form-item
+//- 				input(type="email" name="email" placeholder="email" required)
+//- 			.form-btn
+//- 				button(type="submit").button-color register
+//- 		.success-massage
+//- 			p Thank you, your request has been received!
 
 .modal-block(data-index="2")
 	.modal-wrapper
 		button.close-modal
 			span +
 		.scroll-content
-			p CryptoArtMuseum was founded by an international team of professionals from different spheres: crypto, art, design and business. Our aim is to show that NFT is not just a hype, that it is a new stage of art history which gives new opportunities to both artists and art lovers. 
+			p CryptoArtMuseum was founded by an international team of professionals from different spheres: crypto, art, design and business. Our aim is to show that NFT is not just a hype, that it is a new stage of art history which gives new opportunities to both artists and art lovers.
 			p We are all passionate about innovations and want to make them useful for the development of our society.
-			p Our project is not just an online museum, we plan to support talented artists, educate collectors and make a contribution to the heritage of our generation. 
+			p Our project is not just an online museum, we plan to support talented artists, educate collectors and make a contribution to the heritage of our generation.
 			p The future is now, don’t stop the world's progress.
-			.person-block 
+			.person-block
 				h4 Credits #[span (telegram)]:
-				ul 
-					li 
-						span Olga Filatova&nbsp;— 
+				ul
+					li
+						span Olga Filatova&nbsp;—
 						span &nbsp;Founder, #[a(href="https://msng.link/o/?@olechkaf=tg")  @olechkaf]
-					li 
+					li
 						span Alina Gordienco&nbsp;—
 						span &nbsp;curator, adviser, #[a(href="https://msng.link/o/?@alina_sat8=tg") @alina_sat8]
-					li 
+					li
 						span Sergei Medvedev&nbsp;—
 						span &nbsp;adviser, #[a(href="https://msng.link/o/?@suprum=tg") @suprum]
-					li 
+					li
 						span Anastasia Drinevskaya&nbsp;—
 						span &nbsp;partners relations, #[a(href="https://msng.link/o/?@ana_dawson=tg") @ana_dawson]
-					li 
-						span Ilia Chasovnikov&nbsp;— 
+					li
+						span Ilia Chasovnikov&nbsp;—
 						span &nbsp;Art Director, #[a(href="https://msng.link/o/?@jhardman=tg") @jhardman]
-					li 
-						span Evgeniya Fonareva&nbsp;— 
+					li
+						span Evgeniya Fonareva&nbsp;—
 						span &nbsp;designer, #[a(href="https://msng.link/o/?@fishplate=tg") @fishplate]
-					li 
+					li
 						span Pavel Shikhaleev&nbsp;-
 						span &nbsp;operations manager, #[a(href="https://msng.link/o/?@PaulEv=tg") @PaulEv]
 
@@ -66,11 +85,11 @@ mixin donateItem(imgSrc, name)
 		button.close-modal
 			span +
 		.scroll-content
-			p CryproArtMuseum foundation is a non-commercial organisation to help NFT art to develop as a full-fledged sphere of art. 
-			p We plan to aggregate donations to support young artists, give them grants and organize residence with outstanding experts in digital art. 
+			p CryproArtMuseum foundation is a non-commercial organisation to help NFT art to develop as a full-fledged sphere of art.
+			p We plan to aggregate donations to support young artists, give them grants and organize residence with outstanding experts in digital art.
 			p We make all spendings transparent and will give our contributors all info about our achievements and plans.
 			p If you are also passionate about NFT art, feel free to donate and subscribe to our newsletter to know all updates and success stories.
-			.donate-type 
-				+donateItem('btc', 'Bitcoin') 
-				+donateItem('eth', 'ethereum') 
+			.donate-type
+				+donateItem('btc', 'Bitcoin')
+				+donateItem('eth', 'ethereum')
 				+donateItem('usdt', 'tether')
